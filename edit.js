@@ -1070,6 +1070,7 @@ $(document).ready(function () {
             if (doc.exists) {
                 myOldIntro += '<label for="oldIntro">Current Message</label>';
                 myOldIntro += '<textarea readonly name="oldIntro" class="oldIntro">' + doc.data().value + '</textarea>';
+                $('#old-intro-div>label').detach();
                 $('#old-intro-div>textarea').detach();
                 $('#old-intro-div').append(myOldIntro);
             } else {
