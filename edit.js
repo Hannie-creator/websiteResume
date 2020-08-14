@@ -17,6 +17,10 @@ var firebaseConfig = {
 var defaultProject = firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
+/*collapse navigation bar*/
+$('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
+});
 /*
     This is the user login function, it authenticates the user and lets the user to edit the ontents of the website resume if the authentication is successful.
 */
@@ -56,7 +60,7 @@ function loginFunction() {
             //read data
             db.collection("hobbies").get().then(function (snapshot) {
                 snapshot.forEach(function (doc) {
-                    myHobby += '<p>' + doc.data().name + '</p>';
+                    myHobby += '<div><p>' + doc.data().name + '</p></div>';
                 })
                 $('#hobby-content').append(myHobby);
             });
@@ -239,9 +243,9 @@ function addHobbyFunction() {
         //read data
         db.collection("hobbies").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
-                myHobby += '<p>' + doc.data().name + '</p>';
+                myHobby += '<div><p>' + doc.data().name + '</p></div>';
             })
-            $('#hobby-content>p').detach();
+            $('#hobby-content>div').detach();
             $('#hobby-content').append(myHobby);
         });
         $("nav").show();
@@ -278,9 +282,9 @@ function deleteHobbyFunction() {
         //read data
         db.collection("hobbies").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
-                myHobby += '<p>' + doc.data().name + '</p>';
+                myHobby += '<div><p>' + doc.data().name + '</p></div>';
             })
-            $('#hobby-content>p').detach();
+            $('#hobby-content>div').detach();
             $('#hobby-content').append(myHobby);
         });
         $("nav").show();
@@ -292,9 +296,9 @@ function deleteHobbyFunction() {
         //read data
         db.collection("hobbies").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
-                myHobby += '<p>' + doc.data().name + '</p>';
+                myHobby += '<div><p>' + doc.data().name + '</p></div>';
             })
-            $('#hobby-content>p').detach();
+            $('#hobby-content>div').detach();
             $('#hobby-content').append(myHobby);
         });
         $("#hobbyID").val("");
