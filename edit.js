@@ -1177,7 +1177,7 @@ $(document).ready(function () {
         //read data
         db.collection("educations").get().then(function (snapshot) {
             myEducation += '<select id="educationID" required>';
-            myEduation += '<option value="">--Select Education--</option>';
+            myEducation += '<option value="">--Select Education--</option>';
             snapshot.forEach(function (doc) {
                 myEducation += '<option value="' + doc.id + '">' + doc.data().school + ": " + doc.data().degree + '</option>';
             })
