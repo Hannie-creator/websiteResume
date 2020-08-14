@@ -1179,7 +1179,7 @@ $(document).ready(function () {
             myEducation += '<select id="educationID" required>';
             myEducation += '<option value="">--Select Education--</option>';
             snapshot.forEach(function (doc) {
-                myEducation += '<option value="' + doc.id + '">' + doc.data().school + ": " + doc.data().degree + '</option>';
+                myEducation += '<option value="' + doc.id + '">' + doc.data().school + " (" + doc.data().degree + ")" + '</option>';
             })
             myEducation += '</select>';
             $('#select-education>select').detach();
@@ -1233,7 +1233,7 @@ $(document).ready(function () {
             myOrganization += '<select id="organizationID" required>';
             myOrganization += '<option value="">--Select Organization--</option>';
             snapshot.forEach(function (doc) {
-                myOrganization += '<option value="' + doc.id + '">' + doc.data().name + ": " + doc.data().position + '</option>';
+                myOrganization += '<option value="' + doc.id + '">' + doc.data().name + " (" + doc.data().position + ")" + '</option>';
             })
             myOrganization += '</select>';
             $('#select-organization>select').detach();
@@ -1287,7 +1287,7 @@ $(document).ready(function () {
             myWork += '<select id="workID" required';
             myWork += '<option value="">--Select Work--</option>';
             snapshot.forEach(function (doc) {
-                myWork += '<option value="' + doc.id + '">' + doc.data().name + ": " + doc.data().lab + '</option>';
+                myWork += '<option value="' + doc.id + '">' + doc.data().name + " (" + doc.data().lab + ")" + '</option>';
             })
             myWork += '</select>';
             $('#select-work>select').detach();
