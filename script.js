@@ -1,6 +1,6 @@
 /*
     This is the javascript for the index.html file.
-    This javasript is for the displaying of the ontents of website resume.
+    This javasript is for the displaying of the contents of the website resume.
     Author: Hannah Chen
     Submitted on: August 14,2020
 */
@@ -16,6 +16,11 @@ var firebaseConfig = {
 // Initialize Firebase
 var defaultProject = firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
+
+/*collapse navigation bar*/
+$('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
+});
 
 var dbabout = db.collection("others").doc("intro");
 var aboutme = '';
@@ -33,9 +38,8 @@ dbabout.get().then(function (doc) {
 var myHobby = '';
 //read data
 db.collection("hobbies").get().then(function (snapshot) {
-    //myHobby += '</br>';
     snapshot.forEach(function (doc) {
-        myHobby += '<p>' + doc.data().name + '</p>';
+        myHobby += '<div><p>' + doc.data().name + '</p></div>';
     })
     $('#hobby-content').append(myHobby);
 });
