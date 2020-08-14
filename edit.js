@@ -1284,7 +1284,7 @@ $(document).ready(function () {
         var myWork = '';
         //read data
         db.collection("works").get().then(function (snapshot) {
-            myWork += '<select id="workID" required';
+            myWork += '<select id="workID" required>';
             myWork += '<option value="">--Select Work--</option>';
             snapshot.forEach(function (doc) {
                 myWork += '<option value="' + doc.id + '">' + doc.data().name + " (" + doc.data().lab + ")" + '</option>';
