@@ -42,7 +42,7 @@ body {
 
 /*for the content*/
 .container-content {
-    background-image: url("https://cdn.pixabay.com/photo/2017/02/16/22/46/background-2072829__480.jpg");
+    background-image: url("containerBg.jpg");
     background-size: 100%;
 }
 
@@ -83,7 +83,7 @@ body {
 .about {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/450066/pexels-photo-450066.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("introBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -157,7 +157,7 @@ body {
 .hobby {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/628281/pexels-photo-628281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("hobbiesBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -255,7 +255,7 @@ body {
 .education {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("educationBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -364,7 +364,7 @@ body {
 .organization {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/630754/autumn-orange-nature-red-630754.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("organizationBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -454,7 +454,7 @@ body {
 .work {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/518245/pexels-photo-518245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("workBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -544,7 +544,7 @@ body {
 .link {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/132197/pexels-photo-132197.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("linkBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -624,45 +624,30 @@ body {
 }
 
 .link .link-content .fa-twitter {
-    /*animation:rainbox-txt 3s infinite;*/
     font-size: 10vh;
     color: rgb(99, 12, 12);
-    /*position:absolute;
-  top:45vh;
-  right:110vh;*/
     background-color: white;
     box-sizing: border-box;
     padding: 1%;
     border-radius: 50px;
-    /*animation:rotate-vertical 3s infinite;*/
 }
 
 .link .link-content .fa-linkedin {
-    /*animation:rainbow-txt 3s infinite;*/
     font-size: 10vh;
     color: rgb(99, 12, 12);
-    /*position:absolute;
-  top:45vh;
-  right:84vh;*/
     background-color: white;
     box-sizing: border-box;
     padding: 1%;
     border-radius: 50px;
-    /*animation:pop 3s infinite;*/
 }
 
 .link .link-content .fa-github {
-    /*animation:rainbow-txt 3s infinite;*/
     font-size: 10vh;
     color: rgb(99, 12, 12);
-    /*position:absolute;
-  top:45vh;
-  right:58vh;*/
     background-color: white;
     box-sizing: border-box;
     padding: 1%;
     border-radius: 50px;
-    /*animation:full-circle 3s infinite;*/
 }
 
 .link .link-content .fa-twitter:hover {
@@ -699,7 +684,7 @@ footer {
 }
 
 .form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     height: 100vh;
     display: grid;
@@ -795,7 +780,7 @@ footer {
 
 /*update introduction message container*/
 .update-intro-container .form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -888,7 +873,7 @@ span p {
 }
 
 .add-hobby-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -948,7 +933,7 @@ span p {
 }
 
 .delete-hobby-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1027,7 +1012,7 @@ option:hover {
 }
 
 .add-education-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1165,7 +1150,7 @@ option:hover {
 }
 
 .delete-education-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1262,7 +1247,7 @@ option:hover {
 }
 
 .add-organization-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1400,7 +1385,7 @@ option:hover {
 }
 
 .delete-organization-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1497,7 +1482,7 @@ option:hover {
 }
 
 .add-work-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1635,7 +1620,7 @@ option:hover {
 }
 
 .delete-work-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1733,7 +1718,7 @@ option:hover {
 }
 
 .choose-link-form-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1807,7 +1792,7 @@ option:hover {
 
 /*update twitter link container*/
 .update-twitter-container .form-twitter-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1891,7 +1876,7 @@ span p {
 
 /*update linkedin container*/
 .update-linkedin-container .form-linkedin-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -1975,7 +1960,7 @@ span p {
 
 /*update github link container*/
 .update-github-container .form-github-container {
-    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+    background-image: url("formBg.gif");
     width: 100%;
     min-height: 100vh;
     display: grid;
