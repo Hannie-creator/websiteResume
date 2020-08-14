@@ -37,7 +37,7 @@ dbabout.get().then(function (doc) {
 /*read from firebase and display hobbies*/
 var myHobby = '';
 //read data
-db.collection("hobbies").get().then(function (snapshot) {
+db.collection("hobbies").orderBy("name", "asc").get().then(function (snapshot) {
     snapshot.forEach(function (doc) {
         myHobby += '<div><p>' + doc.data().name + '</p></div>';
     })
@@ -47,7 +47,7 @@ db.collection("hobbies").get().then(function (snapshot) {
 /*read from firebase and display educations*/
 var myEducation = '';
 //read data
-db.collection("educations").get().then(function (snapshot) {
+db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
     myEducation += '</br>';
     snapshot.forEach(function (doc) {
         myEducation += '<div class="edu-divided-div">';
@@ -62,7 +62,7 @@ db.collection("educations").get().then(function (snapshot) {
 /*read from firebase and display organizations*/
 var myOrganization = '';
 //read data
-db.collection("organizations").get().then(function (snapshot) {
+db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
     myOrganization += '</br>';
     snapshot.forEach(function (doc) {
         myOrganization += '<div class="edu-divided-div">';
@@ -77,7 +77,7 @@ db.collection("organizations").get().then(function (snapshot) {
 /*read from firebase and display work*/
 var myWork = '';
 //read data
-db.collection("works").get().then(function (snapshot) {
+db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
     myEducation += '</br>';
     snapshot.forEach(function (doc) {
         myWork += '<div class="edu-divided-div">';
