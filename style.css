@@ -83,7 +83,7 @@ body {
 .about {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/450066/pexels-photo-450066.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("introBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
