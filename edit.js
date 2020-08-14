@@ -58,7 +58,7 @@ function loginFunction() {
             /*reads from firebase and displays the hobbies*/
             var myHobby = '';
             //read data
-            db.collection("hobbies").get().then(function (snapshot) {
+            db.collection("hobbies").orderBy("name", "asc").get().then(function (snapshot) {
                 snapshot.forEach(function (doc) {
                     myHobby += '<div><p>' + doc.data().name + '</p></div>';
                 })
@@ -68,7 +68,7 @@ function loginFunction() {
             /*reads from firebase and displays the educational backgrounds*/
             var myEducation = '';
             //read data
-            db.collection("educations").get().then(function (snapshot) {
+            db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
                 myEducation += '</br>';
                 snapshot.forEach(function (doc) {
                     myEducation += '<div class="edu-divided-div">';
@@ -83,7 +83,7 @@ function loginFunction() {
             /*reads from firebase and displays the organizations*/
             var myOrganization = '';
             //read data
-            db.collection("organizations").get().then(function (snapshot) {
+            db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
                 myOrganization += '</br>';
                 snapshot.forEach(function (doc) {
                     myOrganization += '<div class="edu-divided-div">';
@@ -98,7 +98,7 @@ function loginFunction() {
             /*reads from firebase and displays the work histories*/
             var myWork = '';
             //read data
-            db.collection("works").get().then(function (snapshot) {
+            db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
                 myEducation += '</br>';
                 snapshot.forEach(function (doc) {
                     myWork += '<div class="edu-divided-div">';
@@ -241,7 +241,7 @@ function addHobbyFunction() {
         $(".update-github-container").hide();
         var myHobby = '';
         //read data
-        db.collection("hobbies").get().then(function (snapshot) {
+        db.collection("hobbies").orderBy("name", "asc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myHobby += '<div><p>' + doc.data().name + '</p></div>';
             })
@@ -280,7 +280,7 @@ function deleteHobbyFunction() {
         /*display the current list of hobbies*/
         var myHobby = '';
         //read data
-        db.collection("hobbies").get().then(function (snapshot) {
+        db.collection("hobbies").orderBy("name", "asc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myHobby += '<div><p>' + doc.data().name + '</p></div>';
             })
@@ -294,7 +294,7 @@ function deleteHobbyFunction() {
         alert("Error in deleting item: " + err);
         var myHobby = '';
         //read data
-        db.collection("hobbies").get().then(function (snapshot) {
+        db.collection("hobbies").orderBy("name", "asc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myHobby += '<div><p>' + doc.data().name + '</p></div>';
             })
@@ -347,7 +347,7 @@ function deleteEducationFunction() {
         /*read from firebase and display the eduational backgrounds*/
         var myEducation = '';
         //read data
-        db.collection("educations").get().then(function (snapshot) {
+        db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myEducation += '<div class="edu-divided-div">';
                 myEducation += '<p class="bold">' + doc.data().school + '</p>';
@@ -365,7 +365,7 @@ function deleteEducationFunction() {
         alert("Error in deleting item: " + err);
         var myEducation = '';
         //read data
-        db.collection("educations").get().then(function (snapshot) {
+        db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myEducation += '<div class="edu-divided-div">';
                 myEducation += '<p class="bold">' + doc.data().school + '</p>';
@@ -433,7 +433,7 @@ function addEducationFunction() {
         /*read from firebase and display educational backgrounds*/
         var myEducation = '';
         //read data
-        db.collection("educations").get().then(function (snapshot) {
+        db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myEducation += '<div class="edu-divided-div">';
                 myEducation += '<p class="bold">' + doc.data().school + '</p>';
@@ -474,7 +474,7 @@ function deleteOrganizationFunction() {
         $(".update-github-container").hide();
         var myOrganization = '';
         //read data
-        db.collection("organizations").get().then(function (snapshot) {
+        db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myOrganization += '<div class="edu-divided-div">';
                 myOrganization += '<p class="bold">' + doc.data().name + '</p>';
@@ -492,7 +492,7 @@ function deleteOrganizationFunction() {
         alert("Error in deleting item: " + err);
         var myOrganization = '';
         //read data
-        db.collection("organizations").get().then(function (snapshot) {
+        db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myOrganization += '<div class="edu-divided-div">';
                 myOrganization += '<p class="bold">' + doc.data().name + '</p>';
@@ -558,7 +558,7 @@ function addOrganizationFunction() {
         $(".update-github-container").hide();
         var myOrganization = '';
         //read data
-        db.collection("organizations").get().then(function (snapshot) {
+        db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myOrganization += '<div class="edu-divided-div">';
                 myOrganization += '<p class="bold">' + doc.data().name + '</p>';
@@ -601,7 +601,7 @@ function deleteWorkFunction() {
         /*read from firebase and display work history*/
         var myWork = '';
         //read data
-        db.collection("works").get().then(function (snapshot) {
+        db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myWork += '<div class="edu-divided-div">';
                 myWork += '<p class="bold">' + doc.data().name + '</p>';
@@ -619,7 +619,7 @@ function deleteWorkFunction() {
         alert("Error in deleting item: " + err);
         var myWork = '';
         //read data
-        db.collection("works").get().then(function (snapshot) {
+        db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myWork += '<div class="edu-divided-div">';
                 myWork += '<p class="bold">' + doc.data().name + '</p>';
@@ -687,7 +687,7 @@ function addWorkFunction() {
         /*read from firebase and display work history*/
         var myWork = '';
         //read data
-        db.collection("works").get().then(function (snapshot) {
+        db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
             snapshot.forEach(function (doc) {
                 myWork += '<div class="edu-divided-div">';
                 myWork += '<p class="bold">' + doc.data().name + '</p>';
@@ -1126,7 +1126,7 @@ $(document).ready(function () {
         //var db = firebase.firestore();
         var myHobby = '';
         //read data
-        db.collection("hobbies").get().then(function (snapshot) {
+        db.collection("hobbies").orderBy("name", "asc").get().then(function (snapshot) {
             myHobby += '<select id="hobbyID" required>';
             myHobby += '<option value="">--Select Hobby--</option>';
             snapshot.forEach(function (doc) {
@@ -1180,7 +1180,7 @@ $(document).ready(function () {
         $(".delete-education-container").show();
         var myEducation = '';
         //read data
-        db.collection("educations").get().then(function (snapshot) {
+        db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
             myEducation += '<select id="educationID" required>';
             myEducation += '<option value="">--Select Education--</option>';
             snapshot.forEach(function (doc) {
@@ -1234,7 +1234,7 @@ $(document).ready(function () {
         $(".delete-organization-container").show();
         var myOrganization = '';
         //read data
-        db.collection("organizations").get().then(function (snapshot) {
+        db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
             myOrganization += '<select id="organizationID" required>';
             myOrganization += '<option value="">--Select Organization--</option>';
             snapshot.forEach(function (doc) {
@@ -1288,7 +1288,7 @@ $(document).ready(function () {
         $(".delete-work-container").show();
         var myWork = '';
         //read data
-        db.collection("works").get().then(function (snapshot) {
+        db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
             myWork += '<select id="workID" required>';
             myWork += '<option value="">--Select Work--</option>';
             snapshot.forEach(function (doc) {
