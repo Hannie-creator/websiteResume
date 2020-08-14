@@ -1,6 +1,6 @@
 /*
-    This is the css for the index.html file.
-    This css is for the displaying of the contents of the website resume.
+    This is the css for the edit.html file.
+    This css is for the editing of the website resume.
     Author: Hannah Chen
     Submitted on: August 14,2020
 */
@@ -42,7 +42,7 @@ body {
 
 /*for the content*/
 .container-content {
-    background-image: url("https://cdn.pixabay.com/photo/2017/02/16/22/46/background-2072829__480.jpg");
+    background-image: url("containerBg.jpg");
     background-size: 100%;
 }
 
@@ -137,7 +137,7 @@ body {
 .hobby {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/628281/pexels-photo-628281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("hobbiesBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -195,7 +195,7 @@ body {
 .education {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("educationBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -263,7 +263,7 @@ body {
 .organization {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/630754/autumn-orange-nature-red-630754.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("organizationBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -312,7 +312,7 @@ body {
 .work {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/518245/pexels-photo-518245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("workBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
@@ -361,7 +361,7 @@ body {
 .link {
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/132197/pexels-photo-132197.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("linkBg.jpeg");
     background-size: cover;
     box-sizing: border-box;
     padding-top: 17vh;
