@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This html file is for authorized users to edit the website resume made for CCAPDEV Machine Projet 1-->
+<!--    Author: Hannah Chen-->
+<!--    Submitted on: August 14, 2020-->
+
+<head>
+    <title>Hannah's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="edit.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--for user login -->
+    <div class="login-container" id="login-container">
+        <div id="form-container" class="form-container">
+            <form id="form-signin" class="form-signin" name="form-signin">
+                <span id="form-header">
+                    <p id="form-head-word">User Log-in Form</p>
+                </span>
+                <div id="form-input" class="form-input" name="form-input">
+                    <p class="input-username">
+                        <input type="text" name="username" placeholder="Username" id="username" required>
+                    </p>
+                    <p class="input-password">
+                        <input type="password" name="password" placeholder="Password" id="password" required>
+                    </p>
+                    <div id="button">
+                        <button type="submit" class="btn-login" id="btn-login" value="Log-In">Log-In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- for main contents -->
+    <div class="container-content" id="container-content">
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top navbar-static-top blurBackground noClick" id="nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-home" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-female" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-music" href="#hobby">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-graduation-cap" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-users" href="#organization">Organization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-building" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-link" href="#link">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--         homepage -->
+        <div id="home" class="home">
+            <div class="name" id="name">
+                <span id="name-txt" class="name-txt">
+                    <p>Hannah's Website Resume</p>
+                </span>
+            </div>
+        </div>
+
+        <!--        short introduction section-->
+        <div class="about" id="about">
+            <div class="about-header">
+                <span id="about-span">About Me</span>
+            </div>
+            <div class="changes" id="changes">
+                <span class="edit" id="edit">
+                    <i id="edit-i" class="fa fa-pencil edit-intro-icon"></i>
+                </span>
+            </div>
+            <div class="about-content" id="about-content">
+            </div>
+        </div>
+
+        <!--        hobbies page section-->
+        <div class="hobby" id="hobby">
+            <div class="hobby-header">
+                <span id="hobby-span">Hobbies</span>
+            </div>
+            <div class="changes" id="changes">
+                <span class="add" id="add">
+                    <i id="add-i" class="fa fa-plus add-hobby-i"></i>
+                </span>
+                <span class="delete" id="delete">
+                    <i id="delete-i" class="fa fa-trash delete-hobby-i"></i>
+                </span>
+            </div>
+            <div class="hobby-content" id="hobby-content">
+            </div>
+        </div>
+
+        <!--        educational background section-->
+        <div class="education" id="education">
+            <div class="education-header">
+                <span id="education-span">Educations</span>
+            </div>
+            <div class="changes" id="changes">
+                <span class="add" id="add">
+                    <i id="add-i" class="fa fa-plus add-education-i"></i>
+                </span>
+                <span class="delete" id="delete">
+                    <i id="delete-i" class="fa fa-trash delete-education-i"></i>
+                </span>
+            </div>
+            <div class="education-content" id="education-content">
+            </div>
+        </div>
+
+        <!--        organizations section-->
+        <div class="organization" id="organization">
+            <div class="organization-header">
+                <span id="organization-span">Organizations</span>
+            </div>
+            <div class="changes" id="changes">
+                <span class="add" id="add">
+                    <i id="add-i" class="fa fa-plus add-organization-i"></i>
+                </span>
+                <span class="delete" id="delete">
+                    <i id="delete-i" class="fa fa-trash delete-organization-i"></i>
+                </span>
+            </div>
+            <div class="organization-content" id="organization-content">
+            </div>
+        </div>
+
+        <!--        work history section-->
+        <div class="work" id="work">
+            <div class="work-header">
+                <span id="work-span">Works</span>
+            </div>
+            <div class="changes" id="changes">
+                <span class="add" id="add">
+                    <i id="add-i" class="fa fa-plus add-work-i"></i>
+                </span>
+                <span class="delete" id="delete">
+                    <i id="delete-i" class="fa fa-trash delete-work-i"></i>
+                </span>
+            </div>
+            <div class="work-content" id="work-content">
+            </div>
+        </div>
+
+        <!--        contact links section-->
+        <div class="link" id="link">
+            <div class="link-header">
+                <span id="link-span">Links</span>
+            </div>
+            <div class="changes" id="changes">
+                <span class="edit" id="edit">
+                    <i id="edit-i" class="fa fa-pencil edit-links-icon"></i>
+                </span>
+            </div>
+            <div class="link-content" id="link-content">
+                <span id="twitter" class="twitter fa fa-twitter"></span>
+                <span id="linkedin" class="linkedin fa fa-linkedin"></span>
+                <span id="github" class="github fa fa-github"></span>
+            </div>
+        </div>
+
+        <!--        footer-->
+        <footer class="copyright">©2020|Hannah Chen</footer>
+    </div>
+
+    <!--    update introduction message-->
+    <div class="update-intro-container" id="update-intro-container">
+        <div id="form-container" class="form-container">
+            <form id="form-update-intro" class="form-update-intro" name="form-update-intro">
+                <span id="form-header">
+                    <p id="form-head-word">Update Introduction Message</p>
+                </span>
+                <div class="old-intro-div" id="old-intro-div">
+
+                </div>
+                <div id="form-input" class="form-input" name="form-input">
+                    <label for="updatedIntro">New Message</label>
+                    <textarea name="updatedIntro" form="form-update-intro" id="updatedIntro"></textarea>
+                    <div id="button">
+                        <button type="submit" class="btn-update-intro" id="btn-update-intro" value="Submit">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    add hobby-->
+    <div class="add-hobby-container" id="add-hobby-container">
+        <div id="add-hobby-form-container" class="add-hobby-form-container">
+            <form id="form-add-hobby" class="form-add-hobby" name="form-add-hobby">
+                <span id="form-header">
+                    <p id="form-head-word">Add Hobby</p>
+                </span>
+                <div id="form-input-hobby" class="form-input-hobby" name="form-input-hobby">
+                    <p class="input-hobby">
+                        <label for="hobbyname">Hobby Name: </label>
+                        <input type="text" name="hobbyname" placeholder="e.g.Dancing" id="hobbyname" required>
+                    </p>
+                    <div id="button">
+                        <button type="submit" class="btn-add-hobby" id="btn-add-hobby" value="Add">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    delete hobby-->
+    <div class="delete-hobby-container" id="delete-hobby-container">
+        <div id="delete-hobby-form-container" class="delete-hobby-form-container">
+            <form id="form-delete-hobby" class="form-delete-hobby" name="form-delete-hobby">
+                <span id="form-header">
+                    <p id="form-head-word">Delete Hobby</p>
+                </span>
+                <div id="form-select-hobby" class="form-select-hobby" name="form-select-hobby">
+                    <div class="select-hobby" id="select-hobby">
+
+                    </div>
+                    <div id="button">
+                        <button type="submit" class="btn-delete-hobby" id="btn-delete-hobby" value="Delete">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    add educational background-->
+    <div class="add-education-container" id="add-education-container">
+        <div id="add-education-form-container" class="add-education-form-container">
+            <form id="form-add-education" class="form-add-education" name="form-add-education">
+                <span id="form-header">
+                    <p id="form-head-word">Add Education</p>
+                </span>
+                <div id="form-input-education" class="form-input-education" name="form-input-education">
+                    <p class="input-school">
+                        <label for="schoolname">School Name: </label>
+                        <input type="text" name="schoolname" placeholder="e.g.De La Salle University" id="schoolname" required>
+                    </p>
+                    <p class="input-degree">
+                        <label for="degree">Degree: </label>
+                        <input type="text" name="degree" placeholder="e.g.BSIT" id="degree" required>
+                    </p>
+                    <p class="school-year-start">
+                        <label for="year-start">Year Started: </label>
+                        <input type="date" name="year-start" id="year-start" required>
+                    </p>
+                    <p class="school-year-end">
+                        <label for="year-end">Year Ended: </label>
+                        <input type="date" name="year-end" id="year-end" required>
+                    </p>
+                    <div id="button">
+                        <button type="submit" class="btn-add-education" id="btn-add-education" value="Add">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    delete educational background-->
+    <div class="delete-education-container" id="delete-education-container">
+        <div id="delete-education-form-container" class="delete-education-form-container">
+            <form id="form-delete-education" class="form-delete-education" name="form-delete-education">
+                <span id="form-header">
+                    <p id="form-head-word">Delete Education</p>
+                </span>
+                <div id="form-select-education" class="form-select-education" name="form-select-education">
+                    <div class="select-education" id="select-education">
+
+                    </div>
+                    <div id="button">
+                        <button type="submit" class="btn-delete-education" id="btn-delete-education" value="Delete">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--add organizations joined-->
+    <div class="add-organization-container" id="add-organization-container">
+        <div id="add-organization-form-container" class="add-organization-form-container">
+            <form id="form-add-organization" class="form-add-organization" name="form-add-organization">
+                <span id="form-header">
+                    <p id="form-head-word">Add Organization</p>
+                </span>
+                <div id="form-input-organization" class="form-input-organization" name="form-input-organization">
+                    <p class="input-org">
+                        <label for="orgname">Organization Name: </label>
+                        <input type="text" name="orgname" placeholder="e.g.La Salle Computer Society" id="orgname" required>
+                    </p>
+                    <p class="input-position">
+                        <label for="position">Position: </label>
+                        <input type="text" name="position" placeholder="e.g.AVP" id="position" required>
+                    </p>
+                    <p class="org-year-start">
+                        <label for="org-year-start">Year Started: </label>
+                        <input type="date" name="org-year-start" id="org-year-start" required>
+                    </p>
+                    <p class="org-year-end">
+                        <label for="org-year-end">Year Ended: </label>
+                        <input type="date" name="org-year-end" id="org-year-end" required>
+                    </p>
+                    <div id="button">
+                        <button type="submit" class="btn-add-organization" id="btn-add-organization" value="Add">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    delete an organization-->
+    <div class="delete-organization-container" id="delete-organization-container">
+        <div id="delete-organization-form-container" class="delete-organization-form-container">
+            <form id="form-delete-organization" class="form-delete-organization" name="form-delete-organization">
+                <span id="form-header">
+                    <p id="form-head-word">Delete Organization</p>
+                </span>
+                <div id="form-select-organization" class="form-select-organization" name="form-select-organization">
+                    <div class="select-organization" id="select-organization">
+
+                    </div>
+                    <div id="button">
+                        <button type="submit" class="btn-delete-organization" id="btn-delete-organization" value="Delete">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    add work-->
+    <div class="add-work-container" id="add-work-container">
+        <div id="add-work-form-container" class="add-work-form-container">
+            <form id="form-add-work" class="form-add-work" name="form-add-work">
+                <span id="form-header">
+                    <p id="form-head-word">Add Work</p>
+                </span>
+                <div id="form-input-work" class="form-input-work" name="form-input-work">
+                    <p class="input-work">
+                        <label for="workname">Work Name: </label>
+                        <input type="text" name="workname" placeholder="e.g.Certus" id="workname" required>
+                    </p>
+                    <p class="input-lab">
+                        <label for="lab">Lab: </label>
+                        <input type="text" name="lab" placeholder="e.g.AVP" id="lab" required>
+                    </p>
+                    <p class="work-year-start">
+                        <label for="work-year-start">Year Started: </label>
+                        <input type="date" name="work-year-start" id="work-year-start" required>
+                    </p>
+                    <p class="work-year-end">
+                        <label for="work-year-end">Year Ended: </label>
+                        <input type="date" name="work-year-end" id="work-year-end" required>
+                    </p>
+                    <div id="button">
+                        <button type="submit" class="btn-add-work" id="btn-add-work" value="Add">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    delete work-->
+    <div class="delete-work-container" id="delete-work-container">
+        <div id="delete-work-form-container" class="delete-work-form-container">
+            <form id="form-delete-work" class="form-delete-work" name="form-delete-work">
+                <span id="form-header">
+                    <p id="form-head-word">Delete Work</p>
+                </span>
+                <div id="form-select-work" class="form-select-work" name="form-select-work">
+                    <div class="select-work" id="select-work">
+
+                    </div>
+                    <div id="button">
+                        <button type="submit" class="btn-delete-work" id="btn-delete-work" value="Delete">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--choose a link to update link address (twitter or linkedin or github)-->
+    <div class="choose-link-container" id="choose-link-container">
+        <div id="choose-link-form-container" class="choose-link-form-container">
+            <form id="form-choose-link" class="form-choose-link" name="form-choose-link">
+                <span id="form-header">
+                    <p id="form-head-word">Choose a Link</p>
+                </span>
+                <div id="form-select-link" class="form-select-link" name="form-select-link">
+                    <div class="select-link" id="select-link">
+                        <select id="selected-links">
+                            <option value="">--Select a Link--</option>
+                            <option id="twitter-link" value="Twitter">Twitter</option>
+                            <option id="linkedin-link" value="LinkedIn">Linked In</option>
+                            <option id="github-link" value="Github">Github</option>
+                        </select>
+                    </div>
+                    <div id="button">
+                        <button type="submit" class="btn-update-link" id="btn-update-link" value="Submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    update twitter address-->
+    <div class="update-twitter-container" id="update-twitter-container">
+        <div id="form-twitter-container" class="form-twitter-container">
+            <form id="form-update-twitter" class="form-update-twitter" name="form-update-twitter">
+                <span id="form-header">
+                    <p id="form-head-word">Update Twitter Link</p>
+                </span>
+                <div class="old-twitter-div" id="old-twitter-div">
+
+                </div>
+                <div id="form-twitter" class="form-twitter" name="form-twitter">
+                    <label for="updatedTwitter">New Link</label>
+                    <textarea name="updatedTwitter" form="form-update-Twitter" id="updatedTwitter"></textarea>
+                    <div id="button">
+                        <button type="submit" class="btn-update-twitter" id="btn-update-twitter" value="Update">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    update linkedin address-->
+    <div class="update-linkedin-container" id="update-linkedin-container">
+        <div id="form-linkedin-container" class="form-linkedin-container">
+            <form id="form-update-linkedin" class="form-update-linkedin" name="form-update-linkedin">
+                <span id="form-header">
+                    <p id="form-head-word">Update Linked-in Link</p>
+                </span>
+                <div class="old-linkedin-div" id="old-linkedin-div">
+
+                </div>
+                <div id="form-linkedin" class="form-linkedin" name="form-linkedin">
+                    <label for="updatedlinkedIn">New Link</label>
+                    <textarea name="updatedlinkedIn" form="form-update-linkedIn" id="updatedlinkedIn"></textarea>
+                    <div id="button">
+                        <button type="submit" class="btn-update-linkedin" id="btn-update-linkedin" value="Update">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    update github address-->
+    <div class="update-github-container" id="update-github-container">
+        <div id="form-github-container" class="form-github-container">
+            <form id="form-update-github" class="form-update-github" name="form-update-github">
+                <span id="form-header">
+                    <p id="form-head-word">Update Github Link</p>
+                </span>
+                <div class="old-github-div" id="old-github-div">
+
+                </div>
+                <div id="form-github" class="form-github" name="form-github">
+                    <label for="updatedGithub">New Link</label>
+                    <textarea name="updatedGithub" form="form-update-Github" id="updatedGithub"></textarea>
+                    <div id="button">
+                        <button type="submit" class="btn-update-github" id="btn-update-github" value="Update">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-auth.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="edit.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
