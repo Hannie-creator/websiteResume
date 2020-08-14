@@ -1,6 +1,6 @@
 /*
-    This is the javascript for the edit.html file.
-    This javasript is for the editing of the website resume.
+    This is the javascript for the index.html file.
+    This javasript is for the displaying of the ontents of website resume.
     Author: Hannah Chen
     Submitted on: August 14,2020
 */
