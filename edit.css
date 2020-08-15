@@ -780,8 +780,8 @@ footer {
 
 .form-signin {
     position: relative;
-    height: 47vh;
-    width: 50vh;
+    min-height: 47vh;
+    min-width: 50vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -876,8 +876,8 @@ footer {
 
 .form-update-intro {
     position: relative;
-    height: 82vh;
-    width: 70vh;
+    min-height: 82vh;
+    min-width: 70vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -969,8 +969,8 @@ span p {
 
 .form-add-hobby {
     position: relative;
-    height: 40vh;
-    width: 60vh;
+    min-height: 40vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1029,8 +1029,8 @@ span p {
 
 .form-delete-hobby {
     position: relative;
-    height: 35vh;
-    width: 60vh;
+    min-height: 35vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1045,8 +1045,8 @@ span p {
 }
 
 .form-select-hobby {
-    width: 35vh;
-    height: 21vh;
+    min-width: 35vh;
+    min-height: 21vh;
     display: grid;
     place-items: center;
     margin-left: 1vh;
@@ -1108,8 +1108,8 @@ option:hover {
 
 .form-add-education {
     position: relative;
-    height: 80vh;
-    width: 60vh;
+    min-height: 80vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1246,8 +1246,8 @@ option:hover {
 
 .form-delete-education {
     position: relative;
-    height: 35vh;
-    width: 60vh;
+    min-height: 35vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1343,8 +1343,8 @@ option:hover {
 
 .form-add-organization {
     position: relative;
-    height: 80vh;
-    width: 60vh;
+    min-height: 80vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1481,8 +1481,8 @@ option:hover {
 
 .form-delete-organization {
     position: relative;
-    height: 35vh;
-    width: 60vh;
+    min-height: 35vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1516,7 +1516,7 @@ select {
     border: 1px solid #aaa;
     box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
     border-radius: 5px;
-    ;
+    
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -1578,8 +1578,8 @@ option:hover {
 
 .form-add-work {
     position: relative;
-    height: 80vh;
-    width: 60vh;
+    min-height: 80vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1716,8 +1716,8 @@ option:hover {
 
 .form-delete-work {
     position: relative;
-    height: 35vh;
-    width: 60vh;
+    min-height: 35vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1888,8 +1888,8 @@ option:hover {
 
 .form-update-twitter {
     position: relative;
-    height: 50vh;
-    width: 60vh;
+    min-height: 50vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -1972,8 +1972,8 @@ span p {
 
 .form-update-linkedin {
     position: relative;
-    height: 50vh;
-    width: 60vh;
+    min-height: 50vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
@@ -2056,8 +2056,8 @@ span p {
 
 .form-update-github {
     position: relative;
-    height: 50vh;
-    width: 60vh;
+    min-height: 50vh;
+    min-width: 60vh;
     margin: auto;
     background: #ffffff;
     border-radius: 5%;
