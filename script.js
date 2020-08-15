@@ -78,7 +78,7 @@ db.collection("organizations").orderBy("year_start", "desc").get().then(function
 var myWork = '';
 //read data
 db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
-    myEducation += '</br>';
+    myWork += '</br>';
     snapshot.forEach(function (doc) {
         myWork += '<div class="edu-divided-div">';
         myWork += '<p class="bold">' + doc.data().name + '</p>';
