@@ -69,6 +69,7 @@ function loginFunction() {
             var myEducation = '';
             //read data
             db.collection("educations").orderBy("year_start", "desc").get().then(function (snapshot) {
+                myEducation += '</br>';
                 snapshot.forEach(function (doc) {
                     myEducation += '<div class="edu-divided-div">';
                     myEducation += '<p class="bold">' + doc.data().school + '</p>';
@@ -83,6 +84,7 @@ function loginFunction() {
             var myOrganization = '';
             //read data
             db.collection("organizations").orderBy("year_start", "desc").get().then(function (snapshot) {
+                myOrganization += '</br>';
                 snapshot.forEach(function (doc) {
                     myOrganization += '<div class="edu-divided-div">';
                     myOrganization += '<p class="bold">' + doc.data().name + '</p>';
@@ -97,6 +99,7 @@ function loginFunction() {
             var myWork = '';
             //read data
             db.collection("works").orderBy("year_start", "desc").get().then(function (snapshot) {
+                myWork += '</br>';
                 snapshot.forEach(function (doc) {
                     myWork += '<div class="edu-divided-div">';
                     myWork += '<p class="bold">' + doc.data().name + '</p>';
